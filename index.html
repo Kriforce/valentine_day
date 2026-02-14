@@ -143,9 +143,9 @@
     <div class="container" id="mainContainer">
         <div class="image-container">
             <img src="bear_love.jpg" alt="Романтическая картинка" id="mainImage">
-            <video id="successVideo" muted loop>
+            <video id="successVideo" muted autoplay loop playsinline poster="bear_love.jpg">
                 <source src="cute_video.mp4" type="video/mp4">
-                Ваш браузер не поддерживает видео.
+                <img src="fallback_image.jpg" alt="Резервная картинка">
             </video>
         </div>
         <div class="question" id="questionText">Дима, будешь моим Валентином?</div>
@@ -284,7 +284,7 @@
             successVideo.style.display = 'block';
             successVideo.play();
             
-            questionText.textContent = "УРАААА!";
+            questionText.textContent = "Круто класс!";
             questionText.style.fontSize = '48px';
             questionText.style.color = '#ff1493';
             
